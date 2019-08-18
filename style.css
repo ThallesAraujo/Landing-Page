@@ -17,7 +17,7 @@ body{
 }
 
 .img-desc{
-    border-radius: 40px 0 0 40px;
+    border-radius: 40px;
     width: 400px;
     height: 400px; 
 }
@@ -36,7 +36,7 @@ body{
     
 }
 
-.greeting{
+.title{
     font-size: 70px;
     font-family: "Rajdhani";
     color: rgb(0, 252, 122);
@@ -52,6 +52,16 @@ body{
     margin-top: 5px;
 }
 
+.card-title{
+    font-size: 30px;
+    font-family: "Quicksand";
+    color: rgb(0, 252, 122);
+}
+
+.card i{
+    color: rgb(0, 252, 122);
+}
+
 .desc-caption{
     font-size: 1.2vw;
     text-align: justify;
@@ -59,6 +69,13 @@ body{
     color: white;
     padding-left: 30px;
     margin-top: 5px;
+}
+
+.desc-card-caption{
+    font-size: 1.2vw;
+    text-align: justify;
+    font-family: "Quicksand";
+    color: white;
 }
 
 nav{
@@ -90,29 +107,53 @@ nav{
     padding-right: 5vw;
     height: 400px;
     margin-right: 0px;
-    background-color: rgb(3, 128, 130);
+    border-radius: 40px 0 0 40px;
+}
+
+.section-project{
+    margin-left: 5vw;
+    padding-left: 5vw;
+    height: 400px;
+    margin-right: 0px;
     border-radius: 40px 0 0 40px;
 }
 
 
 .section-cards{
-    width: 100vw;
-    height: 400px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 40px;
+    background-color: rgb(3, 128, 130);
+    display: flex;
+    height: 500px;
     margin-top: 100px;
 }
 
 .card-container{
-    padding-top: 5vw;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
 
+.card-icon{
+    text-align: center;
+}
+
+.card-icon i{
+    font-size: 40px;
+}
+
 .card{
     border-radius: 40px;
-    margin-right: calc(100vw / 3 - 350px);
-    margin-left: calc(100vw / 3 - 350px);
-    width: 200px;
-    height: 200px;
+    margin-right: calc(100vw / 3 - 500px);
+    margin-left: calc(100vw / 3 - 500px);
+    width: 350px;
+    height: 300px;
+}
+
+footer{
+    background-color: rgb(3, 128, 130);
+    margin-bottom: 0;
+    border-radius: 40px;
 }
