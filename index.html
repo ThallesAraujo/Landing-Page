@@ -1,19 +1,21 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/styles/style.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 
 <head>
     <nav>
-        <div class="logo-container">
-            <div class="logo">Thalles</div>
-            <div class="second">Araújo</div>
-        </div>
-
-        <div class="nav-ic-container">
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-instagram"></i>
+        <div class="nav-container">
+            <div class="logo-container">
+                <div class="logo">Thalles</div>
+                <div class="second">Araújo</div>
+            </div>
+    
+            <ul class="nav-menu">
+                <li>Stacks</li>
+                <li>Projetos</li>
+                <li>Contato</li>
+            </ul>
         </div>
     </nav>
 </head>
@@ -37,7 +39,9 @@
         <div class="card-container">
             <div class="card">
                 <div class="card-icon">
-                    <i class="fas fa-code"></i>
+                    <div class="icon-container">
+                        <i class="fas fa-code"></i>
+                    </div>
                     <p class="card-title">Full-Stack Development</p>
                 </div>
                 <p class="desc-card-caption">
@@ -47,7 +51,9 @@
             </div>
             <div class="card">
                 <div class="card-icon">
-                    <i class="fas fa-project-diagram"></i>
+                    <div class="icon-container">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
                     <p class="card-title">Análise de Sistemas</p>
                 </div>
                 <p class="desc-card-caption">
@@ -58,7 +64,9 @@
             </div>
             <div class="card">
                 <div class="card-icon">
-                    <i class="fas fa-flask"></i>
+                    <div class="icon-container">
+                        <i class="fas fa-flask"></i>
+                    </div>
                     <p class="card-title">Testes de Software</p>
                 </div>
                 <p class="desc-card-caption">
@@ -73,41 +81,106 @@
     <section>
             <p class="title">Projetos</p>
 
-            <div class="section-project">
-                    <p class="card-title">Caixa Econômica Federal</p>
+            <div class="projects">
+                <div class="section-project">
+                    <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
+                    <div class="project-container">
+                        <p class="card-title">Caixa Econômica Federal</p>
                     <p class="desc-card-caption">
                             Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de código 
                             com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da 
                             Caixa Ecnonômica Federal.
                     </p>
+                    </div>
             </div>
 
             <div class="section-project">
-                    <p class="card-title">Caixa Econômica Federal</p>
+                    <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
+                    <div class="project-container">
+                        <p class="card-title">Quantum 4 Inovação</p>
                     <p class="desc-card-caption">
                             Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de código 
                             com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da 
                             Caixa Ecnonômica Federal.
                     </p>
+                    </div>
             </div>
 
             <div class="section-project">
-                    <p class="card-title">Caixa Econômica Federal</p>
+                    <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
+                    <div class="project-container">
+                        <p class="card-title">SUAP-CPA IFPB</p>
                     <p class="desc-card-caption">
                             Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de código 
                             com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da 
                             Caixa Ecnonômica Federal.
                     </p>
+                    </div>
+            </div>
+            <div class="section-project">
+                <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
+                <div class="project-container">
+                    <p class="card-title">Caixa Econômica Federal</p>
+                <p class="desc-card-caption">
+                        Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de código 
+                        com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da 
+                        Caixa Ecnonômica Federal.
+                </p>
+                </div>
+        </div>
+
+        <div class="section-project">
+                <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
+                <div class="project-container">
+                    <p class="card-title">Quantum 4 Inovação</p>
+                <p class="desc-card-caption">
+                        Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de código 
+                        com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da 
+                        Caixa Ecnonômica Federal.
+                </p>
+                </div>
+        </div>
+
+        <div class="section-project">
+                <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
+                <div class="project-container">
+                    <p class="card-title">SUAP-CPA IFPB</p>
+                <p class="desc-card-caption">
+                        Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de código 
+                        com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da 
+                        Caixa Ecnonômica Federal.
+                </p>
+                </div>
+        </div>
             </div>
     </section>
 
     <footer>
-        <p class="footer-title">Gostou do que viu por aqui?</p>
-        <p class="footer-subtitle">Então sinta-se à vontade para entrar em contato</p>
-        <div class="contatos">
-            <p>thalleshenrique.na@gmail.com</p>
-            <p>(87) 9 9203-2864</p>
+        <div class="footer-text">
+            <p class="footer-title">Gostou do que viu por aqui?</p>
+            <p class="footer-subtitle">Então sinta-se à vontade para entrar em contato</p>
+            <div class="contatos">
+                <p>thalleshenrique.na@gmail.com</p>
+                <p>(87) 9 9203-2864</p>
+            </div>
         </div>
+        
+        <div class="footer-icons">
+            <a href="" class="social">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="social">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="" class="social">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="social">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            
+        </div>
+    </nav>
     </footer>
 
 </body>
