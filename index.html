@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="/styles/style.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script src="/main.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
@@ -10,11 +13,11 @@
                 <div class="logo">Thalles</div>
                 <div class="second">Araújo</div>
             </div>
-    
-            <ul class="nav-menu">
-                <li>Stacks</li>
-                <li>Projetos</li>
-                <li>Contato</li>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a class="menu-item" onclick="activateLink(this)" href="#Sobre">Sobre</a></li>
+                <li><a class="menu-item" onclick="activateLink(this)" href="#Stacks">Stacks</a></li>
+                <li><a class="menu-item" onclick="activateLink(this)" href="#Projetos">Projetos</a></li>
             </ul>
         </div>
     </nav>
@@ -22,7 +25,7 @@
 
 <body>
 
-    <div class="section-desc">
+    <div class="section-desc" id="Sobre">
         <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
         <div class="section-desc-text">
             <p class="title">Olá!</p>
@@ -34,7 +37,7 @@
                 sou um grande fã de design de interfaces. Abaixo, tem mais algumas informações a meu respeito:</p>
         </div>
     </div>
-
+    <div id="Stacks" style="padding: 1em;"></div>
     <div class="section-cards">
         <div class="card-container">
             <div class="card">
@@ -75,87 +78,97 @@
                 </p>
             </div>
         </div>
-
     </div>
 
-    <section>
-            <p class="title">Projetos</p>
+    <section id="Projetos">
+        <p class="title">Projetos</p>
 
-            <div class="projects">
-                <div class="section-project">
-                    <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
-                    <div class="project-container">
-                        <p class="card-title">Caixa Econômica Federal</p>
+        <div class="projects">
+            <div class="section-project">
+                <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
+                <div class="project-container">
+                    <p class="card-title">Caixa Econômica Federal</p>
                     <p class="desc-card-caption">
-                            Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de código 
-                            com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da 
-                            Caixa Ecnonômica Federal.
+                        Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de
+                        código
+                        com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da
+                        Caixa Ecnonômica Federal.
                     </p>
-                    </div>
+                </div>
             </div>
 
             <div class="section-project">
-                    <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
-                    <div class="project-container">
-                        <p class="card-title">Quantum 4 Inovação</p>
+                <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
+                <div class="project-container">
+                    <p class="card-title">Quantum 4 Inovação</p>
                     <p class="desc-card-caption">
-                            Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de código 
-                            com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da 
-                            Caixa Ecnonômica Federal.
+                        Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de
+                        código
+                        com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da
+                        Caixa Ecnonômica Federal.
                     </p>
-                    </div>
+                </div>
             </div>
 
             <div class="section-project">
-                    <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
-                    <div class="project-container">
-                        <p class="card-title">SUAP-CPA IFPB</p>
+                <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
+                <div class="project-container">
+                    <p class="card-title">SUAP-CPA IFPB</p>
                     <p class="desc-card-caption">
-                            Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de código 
-                            com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da 
-                            Caixa Ecnonômica Federal.
+                        Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de
+                        código
+                        com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da
+                        Caixa Ecnonômica Federal.
                     </p>
-                    </div>
+                </div>
             </div>
             <div class="section-project">
                 <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
                 <div class="project-container">
                     <p class="card-title">Caixa Econômica Federal</p>
-                <p class="desc-card-caption">
-                        Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de código 
-                        com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da 
+                    <p class="desc-card-caption">
+                        Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de
+                        código
+                        com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da
                         Caixa Ecnonômica Federal.
-                </p>
+                    </p>
                 </div>
-        </div>
+            </div>
 
-        <div class="section-project">
+            <div class="section-project">
                 <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
                 <div class="project-container">
                     <p class="card-title">Quantum 4 Inovação</p>
-                <p class="desc-card-caption">
-                        Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de código 
-                        com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da 
+                    <p class="desc-card-caption">
+                        Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de
+                        código
+                        com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da
                         Caixa Ecnonômica Federal.
-                </p>
+                    </p>
                 </div>
-        </div>
+            </div>
 
-        <div class="section-project">
+            <div class="section-project">
                 <img src="./assets/profile.jpg" class="img-desc" alt="profile" />
                 <div class="project-container">
                     <p class="card-title">SUAP-CPA IFPB</p>
-                <p class="desc-card-caption">
-                        Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de código 
-                        com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da 
+                    <p class="desc-card-caption">
+                        Desenvolvimento full-stack de aplicação web com Angular 5 e JAX-RS, testes de cobertura de
+                        código
+                        com JUnit e Mockito e refatoração de scripts de banco de dados para aplicações de uso interno da
                         Caixa Ecnonômica Federal.
-                </p>
+                    </p>
                 </div>
-        </div>
             </div>
+        </div>
+
+        <div class="call-to-action" style="text-align: center">
+            <button class="fill">Ver outros projetos</button>
+        </div>
+
     </section>
 
-    <footer>
+    <footer id="Contato">
         <div class="footer-text">
             <p class="footer-title">Gostou do que viu por aqui?</p>
             <p class="footer-subtitle">Então sinta-se à vontade para entrar em contato</p>
@@ -164,7 +177,7 @@
                 <p>(87) 9 9203-2864</p>
             </div>
         </div>
-        
+
         <div class="footer-icons">
             <a href="" class="social">
                 <i class="fab fa-linkedin"></i>
@@ -178,9 +191,9 @@
             <a href="" class="social">
                 <i class="fab fa-whatsapp"></i>
             </a>
-            
+
         </div>
-    </nav>
+        </nav>
     </footer>
 
 </body>

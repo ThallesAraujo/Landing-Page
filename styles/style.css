@@ -11,6 +11,11 @@ html {
   margin: 0;
   padding: 0;
   color: white;
+  scroll-behavior: smooth;
+}
+
+.active {
+  color: #00fc7a !important;
 }
 
 .logo-container {
@@ -72,6 +77,29 @@ nav .nav-container .nav-menu {
 
 nav .nav-container .nav-menu li {
   padding: 1em;
+}
+
+nav .nav-container .nav-menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav .nav-container .nav-menu li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00fc7a;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+nav .nav-container .nav-menu li a:hover::after {
+  width: 100%;
+}
+
+nav .nav-container .nav-menu li a:hover {
+  color: #00fc7a;
 }
 
 .section-desc {
@@ -209,6 +237,58 @@ section {
   margin-right: 5%;
 }
 
+section .call-to-action {
+  width: 100%;
+  margin: 1em;
+  margin-bottom: 3em;
+}
+
+button {
+  position: relative;
+  padding: 1em;
+  font-size: 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #00fc7a;
+  border: 2px solid #00fc7a !important;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.fill:hover {
+  color: #023637;
+}
+
+.fill:before {
+  content: "";
+  position: absolute;
+  background: #00fc7a;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  border-radius: 25px;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+  -webkit-transform: scale(1) translateX(-50%) translateY(-50%);
+          transform: scale(1) translateX(-50%) translateY(-50%);
+}
+
+.fill:hover:before {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #00fc7a;
+}
+
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,7 +321,7 @@ section {
 footer {
   background-color: #038082;
   margin-bottom: 0;
-  padding: 2em;
+  padding: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
